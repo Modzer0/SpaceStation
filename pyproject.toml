@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spacestation"
+version = "0.1.0"
+description = "Hardcore real-time space station survival simulator"
+requires-python = ">=3.11"
+dependencies = [
+    "textual>=0.60",
+    "rich>=13.7",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+spacestation = "spacestation.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+spacestation = ["data/*.yaml", "ui/*.tcss"]

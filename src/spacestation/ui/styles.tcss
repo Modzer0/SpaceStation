@@ -1,0 +1,73 @@
+Screen {
+    background: #050608;
+    color: #d8e0e8;
+}
+
+#root {
+    layout: horizontal;
+    height: 100%;
+}
+
+#left {
+    width: 38;
+    min-width: 32;
+    height: 100%;
+    border-right: solid #1f2a36;
+    padding: 0 1;
+}
+
+#right {
+    width: 1fr;
+    height: 100%;
+    layout: vertical;
+}
+
+#wrist-frame {
+    border: round #2c8aa0;
+    height: auto;
+    padding: 1 1;
+    margin-top: 1;
+    background: #08111a;
+}
+
+#wrist-frame > .title {
+    color: #5cd5e8;
+    text-style: bold;
+}
+
+#room-frame {
+    border: round #4a5564;
+    height: 1fr;
+    padding: 1 2;
+    margin: 1 1 0 0;
+    background: #07090c;
+}
+
+#log-frame {
+    border: round #4a5564;
+    height: 14;
+    padding: 0 1;
+    margin: 1 1 1 0;
+    background: #060709;
+}
+
+.crit { color: #ff5566; text-style: bold; }
+.warn { color: #ffcc66; }
+.ok   { color: #88dd88; }
+.dim  { color: #607080; }
+.label{ color: #80a0c0; }
+
+#hint {
+    height: 1;
+    color: #607080;
+    padding: 0 1;
+}
+
+RichLog {
+    background: transparent;
+    color: #c0c8d0;
+}
+
+Static {
+    background: transparent;
+}

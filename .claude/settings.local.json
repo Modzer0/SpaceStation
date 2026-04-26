@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(python smoke_test.py)",
+      "Bash(python -u smoke_test.py)",
+      "Bash(tee smoke_out.txt)",
+      "Bash(taskkill /F /IM python.exe /T)",
+      "PowerShell(Stop-Process -Force -ErrorAction SilentlyContinue)",
+      "PowerShell(\"done\")",
+      "Bash(python -m pip install --quiet textual rich pyyaml)",
+      "Bash(python -u import_test.py)",
+      "Bash(rm -f smoke_test.py import_test.py smoke_out.txt)",
+      "Read(//c/c/Users/broth/git/**)"
+    ]
+  }
+}
